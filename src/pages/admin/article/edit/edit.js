@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import{withRouter} from 'react-router-dom'
 import { Input, Button, Modal, BackTop, message} from "antd";
 import TnTags from 'components/admin/tn-tags/tn-tags'
 import SimpleMDE from 'simplemde';
@@ -19,6 +20,7 @@ class edit extends Component {
     };
     category = '';
     tag='';
+    
     componentDidMount() {
         this.smde = new SimpleMDE({
             element: document.getElementById('editor').childElementCount,
@@ -26,7 +28,6 @@ class edit extends Component {
             autosave: true,
             previewRender: translateMarkdown
         });
-
         if(this.props.location.state){
             this.getArticleDetail(this.props.location.state.id);
         } else {
@@ -150,4 +151,4 @@ class edit extends Component {
     }
 }
 
-export default edit
+export default withRouter(edit)

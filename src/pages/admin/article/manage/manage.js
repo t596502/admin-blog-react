@@ -112,7 +112,7 @@ class Manage extends Component {
                     <div className="action">
                         <Link to={`/article/${record.id}`}>查看</Link>
                         <Divider type="vertical" />
-                        <Link to={{ pathname: '/admin/article/edit', state: { id: record.id } }}>编辑</Link>
+                        <Link to={{ pathname: '/article/edit', state: { id: record.id } }}>编辑</Link>
                         <Divider type="vertical" />
                         <span className="btn-delete" onClick={() => this.handleDelete(record.id, record.title)}>删除</span>
                     </div>

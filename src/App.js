@@ -40,7 +40,7 @@ function App() {
                           </Switch>
                       </Admin>
                   )} />
-                  {/*<Route path='/' component={Index} />*/}
+
               
               </Switch>
               </Suspense>
