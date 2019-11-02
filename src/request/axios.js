@@ -3,7 +3,7 @@ import {message} from 'antd'
 import store from 'store'
 import { Base64 } from 'js-base64';
 import {logout} from 'store/user/actions'
-import reduxAction from 'store'
+import reduxAction from '../store'
 import config from 'config'
 
 const instance = axios.create({

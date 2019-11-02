@@ -57,6 +57,7 @@ class SettingUp extends Component {
                         uploadImg.append(key, values[key]);
                     }
                 }
+                console.log(authorInfo)
                 if(authorInfo.id){                // 更新信息
                     uploadImg.append('id',authorInfo.id)
                 }
