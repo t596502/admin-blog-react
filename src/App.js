@@ -23,7 +23,7 @@ function loading() {
 function App() {
 
   return (
-    
+
       <Provider store={store}>
           <HashRouter forceRefresh={true}>
               <Suspense fallback={loading()}>
@@ -41,12 +41,11 @@ function App() {
                       </Admin>
                   )} />
 
-              
+
               </Switch>
               </Suspense>
-          </HashRouter> 
+          </HashRouter>
       </Provider>
-
   );
 }
 
